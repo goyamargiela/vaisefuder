@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <title>Fuego & Brasa | Alta Defumação Artesanal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <style>
+        :root { --color-bg:#0a0a0a; --color-surface:#141414; --color-surface-light:#1c1c1c; --color-accent:#b8860b; --color-accent-muted:#8b6508; --color-text-main:#e5e5e5; --color-text-muted:#a3a3a3; --color-border:#262626; --font-display:'Playfair Display',serif; --font-body:'Plus Jakarta Sans',sans-serif; }
+        body{background-color:var(--color-bg);color:var(--color-text-main);font-family:var(--font-body);margin:0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));-webkit-font-smoothing:antialiased;overflow-x:hidden}
+        h1,h2,h3,.font-display{font-family:var(--font-display);text-wrap:balance}
+        .text-accent{color:var(--color-accent)} .bg-accent{background-color:var(--color-accent)} .border-accent{border-color:var(--color-accent)}
+        .btn-primary{background-color:var(--color-accent);color:#000;transition:all 0.3s cubic-bezier(0.4,0,0.2,1);font-weight:600;letter-spacing:0.025em}
+        .btn-primary:hover{background-color:#d4af37;transform:translateY(-2px);box-shadow:0 10px 20px -10px var(--color-accent)}
+        .btn-ghost{border:1px solid var(--color-border);color:var(--color-text-main);transition:all 0.3s ease}
+        .btn-ghost:hover{border-color:var(--color-accent);color:var(--color-accent)}
+        .glass-card{background:var(--color-surface);border:1px solid var(--color-border);transition:border-color 0.4s ease,transform 0.4s ease}
+        .glass-card:hover{border-color:var(--color-accent-muted);transform:translateY(-5px)}
+        .reveal{opacity:0;transform:translateY(30px);transition:all 0.8s cubic-bezier(0.22,1,0.36,1)}
+        .reveal.active{opacity:1;transform:translateY(0)}
+        .hero-gradient{background:linear-gradient(to bottom,rgba(10,10,10,0.4) 0%,rgba(10,10,10,0.9) 100%)}
+        .nav-blur{backdrop-filter:blur(12px);background:rgba(10,10,10,0.8);border-bottom:1px solid var(--color-border)}
+        .letter-spacing-wide{letter-spacing:0.1em}
+    </style>
+</head>
+<body>
+    <nav class="nav-blur fixed top-0 left-0 right-0 z-50 py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2"><span class="font-display text-2xl font-bold tracking-tight">Fuego <span class="text-accent">&</span> Brasa</span></div>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium uppercase letter-spacing-wide">
+            <a href="#sobre" class="hover:text-accent transition-colors">A Arte</a>
+            <a href="#menu" class="hover:text-accent transition-colors">Cardápio</a>
+            <a href="#depoimentos" class="hover:text-accent transition-colors">Experiências</a>
+            <a href="#reservas" class="btn-primary px-5 py-2 rounded-sm text-xs uppercase">Reservar Mesa</a>
+        </div>
+    </nav>
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069&auto=format&fit=crop" alt="Platter" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div class="relative z-10 container mx-auto px-6 text-center max-w-4xl">
+            <span class="text-accent uppercase text-sm font-bold letter-spacing-wide mb-6 block reveal">Gastronomia Low & Slow</span>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight reveal" style="transition-delay:0.1s;">A verdadeira experiência da <span class="italic text-accent">alta defumação</span> artesanal.</h1>
+            <p class="text-lg md:text-xl text-muted mb-10 max-w-2xl mx-auto font-light reveal" style="transition-delay:0.2s;">Ingredientes selecionados, cortes nobres defumados lentamente e a harmonia perfeita com cervejas artesanais.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal" style="transition-delay:0.3s;">
+                <a href="#reservas" class="btn-primary px-8 py-4 rounded-sm text-sm uppercase w-full sm:w-auto">Reservar Minha Mesa</a>
+                <a href="#menu" class="btn-ghost px-8 py-4 rounded-sm text-sm uppercase w-full sm:w-auto">Ver o Cardápio</a>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="py-24 bg-surface overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative reveal"><img src="https://images.unsplash.com/photo-1555396273-367ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Pitmaster" class="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700"></div>
+                <div class="reveal" style="transition-delay:0.2s;">
+                    <span class="text-accent uppercase text-sm font-bold letter-spacing-wide mb-4 block">A Nossa Arte</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">O tempo é o nosso <br><span class="italic">ingrediente secreto.</span></h2>
+                    <p class="text-muted font-light leading-relaxed text-lg">No Fuego & Brasa, não acreditamos em pressa. Nossa filosofia é o Low & Slow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="py-24 bg-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal"><span class="text-accent uppercase text-sm font-bold letter-spacing-wide mb-4 block">Gastronomia</span><h2 class="text-4xl md:text-5xl font-bold mb-4">Assinaturas da Casa</h2><div class="w-20 h-1 bg-accent mx-auto"></div></div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="glass-card p-4 reveal group"><div class="overflow-hidden mb-6 h-64"><img src="https://images.unsplash.com/photo-1529193267670-76647f689a33?q=80&w=800&auto=format&fit=crop" alt="Brisket" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div><div class="flex justify-between items-start mb-3"><h3 class="text-2xl font-bold">Texas Brisket</h3><span class="text-accent font-bold">R$ 84</span></div><p class="text-muted text-sm font-light leading-relaxed mb-4">Peito bovino defumado por 14 horas.</p></div>
+                <div class="glass-card p-4 reveal group" style="transition-delay:0.1s;"><div class="overflow-hidden mb-6 h-64"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Ribs" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div><div class="flex justify-between items-start mb-3"><h3 class="text-2xl font-bold">Ribs St. Louis</h3><span class="text-accent font-bold">R$ 72</span></div><p class="text-muted text-sm font-light leading-relaxed mb-4">Costelas suínas com rub de especiarias.</p></div>
+                <div class="glass-card p-4 reveal group" style="transition-delay:0.2s;"><div class="overflow-hidden mb-6 h-64"><img src="https://images.unsplash.com/photo-1603048297172-c97ae779396c?q=80&w=800&auto=format&fit=crop" alt="Platter" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"></div><div class="flex justify-between items-start mb-3"><h3 class="text-2xl font-bold">Fuego Platter</h3><span class="text-accent font-bold">R$ 145</span></div><p class="text-muted text-sm font-light leading-relaxed mb-4">Experiência completa para compartilhar.</p></div>
+            </div>
+        </div>
+    </section>
+    <section id="depoimentos" class="py-24 bg-surface relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal"><span class="text-accent uppercase text-sm font-bold letter-spacing-wide mb-4 block">Experiências</span><h2 class="text-4xl md:text-5xl font-bold">Quem provou, recomenda.</h2></div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border-l-2 border-accent bg-bg reveal"><p class="text-lg italic font-light mb-6">"O Brisket mais macio que já comi na vida."</p><span class="font-bold uppercase text-xs tracking-widest">— Ricardo S.</span></div>
+                <div class="p-8 border-l-2 border-accent bg-bg reveal" style="transition-delay:0.2s;"><p class="text-lg italic font-light mb-6">"Harmonia impecável entre carnes e chopp."</p><span class="font-bold uppercase text-xs tracking-widest">— Mariana L.</span></div>
+                <div class="p-8 border-l-2 border-accent bg-bg reveal" style="transition-delay:0.3s;"><p class="text-lg italic font-light mb-6">"Um refúgio para amantes do churrasco."</p><span class="font-bold uppercase text-xs tracking-widest">— Arthur P.</span></div>
+            </div>
+        </div>
+    </section>
+    <footer id="reservas" class="py-24 bg-bg border-t border-border">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-16">
+                <div class="reveal"><span class="font-display text-3xl font-bold tracking-tight block mb-6">Fuego <span class="text-accent">&</span> Brasa</span><p class="text-muted font-light leading-relaxed mb-8">Onde a tradição da brasa encontra a sofisticação.</p></div>
+                <div class="reveal" style="transition-delay:0.1s;"><h4 class="text-xl font-bold mb-6 uppercase letter-spacing-wide">Informações</h4><div class="space-y-4 text-muted font-light"><div class="flex justify-between"><span>Endereço</span><span class="text-text-main text-right">Rua do Fogo, 123 - Jardins, SP</span></div><div class="flex justify-between"><span>Funcionamento</span><span class="text-text-main text-right">Ter a Dom, 18h às 23h</span></div><div class="flex justify-between"><span>Reservas</span><span class="text-accent font-medium text-right">(11) 99999-9999</span></div></div></div>
+                <div class="reveal" style="transition-delay:0.2s;"><h4 class="text-xl font-bold mb-6 uppercase letter-spacing-wide">Reserve Agora</h4><form class="flex flex-col gap-4"><input type="text" placeholder="Nome" class="bg-surface border border-border p-3 rounded-sm focus:border-accent outline-none transition-colors text-sm"><input type="email" placeholder="Email" class="bg-surface border border-border p-3 rounded-sm focus:border-accent outline-none transition-colors text-sm"><button class="btn-primary py-3 rounded-sm uppercase text-xs font-bold">Solicitar Reserva</button></form></div>
+            </div>
+            <div class="mt-24 pt-8 border-t border-border text-center text-muted text-xs font-light reveal"><p>&copy; 2026 Fuego & Brasa. Todos os direitos reservados.</p></div>
+        </div>
+    </footer>
+    <script>
+        const observerOptions={threshold:0.1};
+        const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('active');});},observerOptions);
+        document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+        document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'});});});
+    </script>
+</body>
+</html>
